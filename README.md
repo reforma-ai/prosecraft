@@ -1,39 +1,31 @@
 # Prosecraft
 
-Practical writing skills for AI agents — humanize prose, draft documentation, and turn rough ideas into clear, useful text.
+Writing skills for AI agents that need to sound like someone meant what they wrote.
 
 [![skills.sh](https://skills.sh/b/reforma-ai/prosecraft)](https://skills.sh/reforma-ai/prosecraft)
 
-Prosecraft is a small collection of focused writing and editing skills. Each skill handles a different kind of text instead of applying one generic style to everything.
+Generic "write better" prompts tend to blur different editorial jobs together. Prosecraft keeps them separate: humanizing a draft, structuring technical documentation, writing interface copy, and building skills for other agents.
 
 ## Skills
 
 | Skill | What it does |
 | --- | --- |
-| [`humanize`](skills/humanize) | A shared editorial layer for any human-facing draft or substantial rewrite. Keeps prose specific, natural, and recognizable without changing its meaning; also supports explicit humanization and audit-only requests. |
-| [`documentation`](skills/documentation) | Writes and edits human-facing technical documentation: READMEs, API references, runbooks, architecture pages, onboarding, tutorials, and how-to guides. Combines Diátaxis and public guidance from Microsoft, Google, Apple, GitLab, and Red Hat with `humanize` as its editorial layer. |
-| [`writing-skills`](skills/writing-skills) | Creates, reviews, and packages reusable agent skills with precise activation, progressive disclosure, portable instructions, and meaningful validation. |
-| [`ux-writing`](skills/ux-writing) | Writes clear, concise interface copy for buttons, labels, menus, empty states, errors, loading states, confirmations, and toasts. |
+| [`humanize`](skills/humanize) | Edits human-facing prose for specificity, natural rhythm, and a recognizable voice without changing the meaning. It can also audit a draft without rewriting it. |
+| [`documentation`](skills/documentation) | Writes READMEs, API references, runbooks, architecture pages, onboarding, tutorials, and how-to guides. It uses Diátaxis and public guidance from Microsoft, Google, Apple, GitLab, and Red Hat, then applies `humanize` as the editorial pass. |
+| [`writing-skills`](skills/writing-skills) | Creates and reviews reusable agent skills: activation descriptions, instructions, references, scripts, packaging, and cross-agent portability. |
+| [`ux-writing`](skills/ux-writing) | Writes interface copy for buttons, labels, menus, tooltips, empty states, errors, loading states, confirmations, and toasts. |
 
 ## Install
 
-### Ask your agent
+### Skills CLI
 
-Paste this into Codex, Claude Code, Cursor, or another coding agent:
-
-```text
-Install the Prosecraft skills I choose globally from https://github.com/reforma-ai/prosecraft using the skills CLI.
-```
-
-### Use the skills CLI
-
-Choose skills and an installation target interactively:
+Choose the skills, target agents, and install scope interactively:
 
 ```bash
 npx skills add reforma-ai/prosecraft
 ```
 
-Install one skill globally:
+Install only `humanize`, globally and without prompts:
 
 ```bash
 npx skills add reforma-ai/prosecraft --skill humanize --global --yes
@@ -45,25 +37,54 @@ Install the full collection globally:
 npx skills add reforma-ai/prosecraft --skill '*' --global --yes
 ```
 
-Target a particular agent with `--agent`, for example:
+Use `--agent` to target one client:
 
 ```bash
 npx skills add reforma-ai/prosecraft --skill humanize --global --agent codex --yes
 ```
 
-List the available skills without installing them:
+See what the repository contains without installing anything:
 
 ```bash
 npx skills add reforma-ai/prosecraft --list
 ```
 
-Without `--global`, the CLI installs skills into the current project. With `--global`, they are available across projects for the selected agent.
+Without `--global`, the CLI installs into the current project. With `--global`, the selected agent can use the skills across projects.
+
+You can also ask an agent to handle the installation:
+
+```text
+Install the Prosecraft skills I choose globally from https://github.com/reforma-ai/prosecraft using the skills CLI.
+```
+
+### Agent plugin
+
+The plugin installs all four skills as one package. Its root [`plugin.json`](plugin.json) follows the portable [Agent Plugins](https://agent-plugins.org/) format and loads the existing `skills/` directory directly.
+
+Claude Code needs its own marketplace metadata:
+
+```bash
+claude plugin marketplace add reforma-ai/prosecraft
+claude plugin install prosecraft@prosecraft
+```
+
+For Codex and ChatGPT, add the repository as a marketplace source:
+
+```bash
+codex plugin marketplace add reforma-ai/prosecraft
+```
+
+Then install **Prosecraft** from the Plugins Directory. If your Codex CLI does not recognize `codex plugin`, update Codex or use the skills CLI.
+
+Cursor reads the portable root manifest without a separate Cursor-specific copy. Until Prosecraft is listed in a Cursor marketplace, install it with the skills CLI or load the repository as a local Agent Plugin.
+
+No build step is required. The plugin manifests package the same files that the skills CLI installs.
 
 ## Use
 
-`humanize` is designed to activate automatically whenever an agent drafts or substantially rewrites human-facing prose. It works alongside the more specific skills: for example, `documentation` decides the shape of a README while `humanize` keeps the prose natural and deliberate.
+Agents normally activate a skill from its description. `humanize` is deliberately broad: it should join any task that drafts or substantially rewrites text for people, while a more specific skill controls the format. For example, `documentation` structures a README and `humanize` keeps the prose from turning stiff or generic.
 
-You can also invoke a skill by name. Clients with slash commands use names such as `/humanize`; Codex accepts explicit invocations such as `$humanize`.
+You can invoke skills directly too. A standalone installation uses names such as `/humanize`; Claude Code namespaces plugin skills as `/prosecraft:humanize`; Codex accepts `$humanize`.
 
 ```text
 /humanize Rewrite this announcement without flattening my voice: ...
@@ -75,7 +96,7 @@ You can also invoke a skill by name. Clients with slash commands use names such 
 /ux-writing Rewrite the empty and error states in this panel.
 ```
 
-`humanize` also supports audit-only requests:
+To inspect a draft without changing it:
 
 ```text
 /humanize Audit this draft for recognizable AI-writing patterns without rewriting it: ...
@@ -84,6 +105,9 @@ You can also invoke a skill by name. Clients with slash commands use names such 
 ## Repository layout
 
 ```text
+plugin.json                         # portable Agent Plugin manifest
+.agents/plugins/marketplace.json   # Codex and ChatGPT catalog
+.claude-plugin/                    # Claude Code compatibility metadata
 skills/
 ├── humanize/
 │   ├── SKILL.md
@@ -98,7 +122,7 @@ skills/
     └── SKILL.md
 ```
 
-Every skill is self-contained and can be installed independently through the [skills CLI](https://skills.sh).
+Each skill is self-contained and can be installed on its own. The manifests contain only packaging metadata, so there is no generated skill copy to keep in sync. For a plugin release, update the version in the portable and Claude manifests.
 
 ## License
 

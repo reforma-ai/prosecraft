@@ -1,0 +1,19 @@
+{
+  "name": "prosecraft",
+  "version": "0.1.0",
+  "description": "Practical skills for writing clear, useful, human-facing prose.",
+  "author": {
+    "name": "Reforma AI",
+    "url": "https://github.com/reforma-ai/prosecraft"
+  },
+  "homepage": "https://github.com/reforma-ai/prosecraft",
+  "repository": "https://github.com/reforma-ai/prosecraft",
+  "license": "MIT",
+  "keywords": [
+    "agent-skills",
+    "writing",
+    "editing",
+    "documentation",
+    "ux-writing"
+  ]
+}

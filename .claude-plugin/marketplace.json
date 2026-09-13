@@ -1,0 +1,16 @@
+{
+  "name": "prosecraft",
+  "owner": {
+    "name": "Reforma AI"
+  },
+  "metadata": {
+    "description": "Practical writing and editing skills for AI agents."
+  },
+  "plugins": [
+    {
+      "name": "prosecraft",
+      "source": "./",
+      "description": "Practical skills for writing clear, useful, human-facing prose."
+    }
+  ]
+}

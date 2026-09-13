@@ -1,0 +1,20 @@
+{
+  "name": "prosecraft",
+  "interface": {
+    "displayName": "Prosecraft"
+  },
+  "plugins": [
+    {
+      "name": "prosecraft",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
