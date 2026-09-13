@@ -1,15 +1,15 @@
 ---
 name: ux-writing
 description: >-
-  Reforma UI copy — buttons, labels, empty states, errors, toasts. Use when
-  writing or editing user-visible strings in apps/front, apps/in, or
-  packages/components. Not marketing pages, not AGENTS.md.
+  Use when writing or editing user-visible interface copy: buttons, labels,
+  menus, tooltips, empty states, errors, loading states, confirmations, and
+  toasts. Not marketing copy, long-form documentation, or agent instructions.
 ---
 
-# UX writing (Reforma)
+# UX writing
 
 Words are UI. Same job as spacing: help someone finish the action.
-Visual craft is `ui-polish`. This skill is the string.
+This skill covers the words and their text alternatives, not visual design.
 
 Match the neighboring string in the same panel first. Don’t restyle the
 product’s voice in passing.
@@ -18,14 +18,14 @@ product’s voice in passing.
 
 Four checks. Fail any one → rewrite.
 
-|                | Means                        | Reforma                                               |
+|                | Means                        | In practice                                           |
 | -------------- | ---------------------------- | ----------------------------------------------------- |
 | **Purposeful** | The string has a job         | Get them to the next action, or tell them what broke  |
-| **Concise**    | Fewest words that still work | Editor: nouns and verbs. Auth: one extra clause is ok |
-| **Clear**      | One reading                  | `Couldn't open App.tsx`, not `An error occurred`      |
+| **Concise**    | Fewest words that still work | Prefer concrete nouns and verbs                       |
+| **Clear**      | One reading                  | `Couldn't open report`, not `An error occurred`       |
 | **Human**      | Spoken, not system           | `Save changes`, not `Persist` / `Submit` / `OK`       |
 
-- **User’s words.** Layers, not “layer tree.” Preview, not “dev server.” Environment, not “sandbox” (Version Control keeps Git: Checkout, Uncommitted).
+- **User’s words.** Use the vocabulary established in the product. Prefer the name people see over internal service, schema, or implementation terms.
 - **Sentence case.** `Save changes`, not `Save Changes`.
 - **The control names the outcome.** Button `Publish` → toast `Published`. One verb through the flow.
 - **Unicode ellipsis** `…` in pending copy (`Updating preview…`), not `...`.
@@ -58,13 +58,13 @@ Empty is an invitation, not a mood.
 
 Interface voice, not a person. What failed + how to fix. No `Oops`. No blame.
 
-| Kind           | Shape                        | Example we already use                                         |
+| Kind           | Shape                        | Example                                                        |
 | -------------- | ---------------------------- | -------------------------------------------------------------- |
 | Field          | Immediate, under the control | `Email is required` / `Password must be at least 6 characters` |
-| Toast / inline | Fact + object                | `Couldn't open App.tsx`                                        |
+| Toast / inline | Fact + object                | `Couldn't open report`                                         |
 | Fallback       | Only when you have no fact   | `Something went wrong. Try again.`                             |
 
-Prefer the fact you have (`No source location for this layer`) over the fallback. Auth forms may keep `Please …` — match that file, don’t “fix” it to editor-dense in passing.
+Prefer the specific fact you have over the fallback. Match the surrounding product voice; sensitive flows may need a more polite or explanatory clause than a dense editor interface.
 
 Confirm: irreversible verb on the confirm button (`Delete project`), not `Yes` / `OK`. Cancel stays `Cancel`.
 
@@ -76,13 +76,13 @@ Name the wait: `Saving…`, `Updating preview…`, `Loading pages`. Not `Please 
 
 | Weak                   | Better                               | Why                               |
 | ---------------------- | ------------------------------------ | --------------------------------- |
-| `An error occurred`    | `Couldn't open App.tsx`              | names the object                  |
-| `No data`              | `No pages yet`                       | what this is + that it’s expected |
+| `An error occurred`    | `Couldn't open report`               | names the object                  |
+| `No data`              | `No projects yet`                    | what this is + that it’s expected |
 | `Submit`               | `Save changes`                       | outcome                           |
 | `Click here`           | the action as the link text          | a11y + scan                       |
-| `Invalid input`        | `Please enter a valid email address` | how to fix (auth register)        |
+| `Invalid input`        | `Please enter a valid email address` | gives the corrective action       |
 | `Remove` (destructive) | `Delete page`                        | permanent vs unbind               |
-| `Webhook failed`       | what the person was doing            | no system names in chrome         |
+| `Webhook failed`       | `Couldn't send message`              | names the user's action           |
 
 ## A11y (copy only)
 
@@ -95,14 +95,14 @@ Name the wait: `Saving…`, `Updating preview…`, `Loading pages`. Not `Please 
 
 | Don’t                                                       | Do                                           |
 | ----------------------------------------------------------- | -------------------------------------------- |
-| System names in chrome (`webhook`, `AST`, `HMR`, `sandbox`) | Preview, environment, the thing they clicked |
-| Clever / branded filler                                     | The action                                   |
-| Pin copy in tests                                           | Assert structure (AGENTS.md). Copy changes.  |
-| Rewrite a panel’s voice while fixing one string             | Two neighbors, then match                    |
+| Internal system names in product chrome         | The object or action the person recognizes       |
+| Clever or branded filler                        | The action                                       |
+| Pin incidental wording in tests                 | Assert behavior; pin copy only when contractual  |
+| Rewrite a panel’s voice while fixing one string | Read two neighboring strings, then match          |
 
 ## When touching strings
 
-1. Read two neighboring strings in that surface — match register (editor dense vs auth `Please`).
+1. Read two neighboring strings in that surface and match their register.
 2. Same word for the same action everywhere in the flow.
 3. Surgical diff. Don’t “improve” unrelated copy.
 

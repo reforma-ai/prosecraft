@@ -11,9 +11,9 @@ Prosecraft is a small collection of focused writing and editing skills. Each ski
 | Skill | What it does |
 | --- | --- |
 | [`humanize`](skills/humanize) | A shared editorial layer for any human-facing draft or substantial rewrite. Keeps prose specific, natural, and recognizable without changing its meaning; also supports explicit humanization and audit-only requests. |
-| [`documentation`](skills/writing-docs) | Writes and edits human-facing technical documentation: READMEs, API references, runbooks, architecture pages, onboarding, tutorials, and how-to guides. Uses the appropriate [Diátaxis](https://diataxis.fr/) form for the reader's goal. |
-| [`writing-for-agents`](skills/writing-for-agents) | Creates concise, discoverable instructions for skills, `AGENTS.md`, `CLAUDE.md`, and other documents consumed by agents. |
-| [`ux-writing`](skills/writing-ux) | Writes clear, concise Reforma UI copy for buttons, labels, empty states, errors, loading states, and toasts. |
+| [`documentation`](skills/documentation) | Writes and edits human-facing technical documentation: READMEs, API references, runbooks, architecture pages, onboarding, tutorials, and how-to guides. Combines Diátaxis and public guidance from Microsoft, Google, Apple, GitLab, and Red Hat with `humanize` as its editorial layer. |
+| [`writing-skills`](skills/writing-skills) | Creates, reviews, and packages reusable agent skills with precise activation, progressive disclosure, portable instructions, and meaningful validation. |
+| [`ux-writing`](skills/ux-writing) | Writes clear, concise interface copy for buttons, labels, menus, empty states, errors, loading states, confirmations, and toasts. |
 
 ## Install
 
@@ -70,7 +70,7 @@ You can also invoke a skill by name. Clients with slash commands use names such 
 
 /documentation Write a how-to for rotating this API key.
 
-/writing-for-agents Review this AGENTS.md for weak pointers and duplicated rules.
+/writing-skills Review this skill for weak activation, hidden assumptions, and unnecessary context.
 
 /ux-writing Rewrite the empty and error states in this panel.
 ```
@@ -89,12 +89,12 @@ skills/
 │   ├── SKILL.md
 │   ├── agents/openai.yaml
 │   └── references/
-├── writing-docs/
+├── documentation/
 │   └── SKILL.md
-├── writing-for-agents/
+├── writing-skills/
 │   ├── SKILL.md
-│   └── SKILL-MECHANICS.md
-└── writing-ux/
+│   └── references/
+└── ux-writing/
     └── SKILL.md
 ```
 

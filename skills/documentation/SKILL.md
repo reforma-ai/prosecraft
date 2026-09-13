@@ -3,13 +3,26 @@ name: documentation
 description: >-
   Use when writing or editing human-facing technical docs: README, API
   reference, runbook, architecture, onboarding, tutorial, or how-to.
-  Not UI copy (ux-writing) and not agent docs (writing-for-agents).
+  Not UI copy (ux-writing) and not reusable agent skills (writing-skills).
 ---
 
 # Documentation
 
-Write the human page. UI strings are `ux-writing`. Skills and `AGENTS.md`
-are `writing-for-agents`.
+Write the human page. UI strings are `ux-writing`. Reusable agent skills are
+`writing-skills`; always-on repository instructions follow the target agent's conventions.
+
+For a new page or substantial rewrite, read
+[references/documentation-style.md](references/documentation-style.md). For a small,
+mechanical correction, preserve the surrounding page's established style.
+
+## Compose with humanize
+
+Use `humanize` alongside this skill when it is available. This skill owns the reader's
+task, information architecture, technical accuracy, terminology, code, and document
+shape. `humanize` owns natural rhythm, concrete language, restraint, and removal of
+generic framing. If they conflict, correctness and the established documentation
+contract win. Humanization must never alter commands, identifiers, requirements,
+warnings, API behavior, or documented outcomes.
 
 [Diátaxis](https://diataxis.fr/): one page, one job. A how-to that lectures, or
 a reference that walks a tutorial, is the wrong page — split and link.
@@ -36,14 +49,18 @@ first success, then links to the other three.
 
 1. Read neighboring docs in the same tree for tone, terms, and what already
    exists. Link instead of rewriting.
-2. Product guide → `apps/docs` (Fumadocs — that folder's `AGENTS.md`). Package
-   intro → that package's `README.md`. Don't add a repo-root `docs/` or ADR
-   tree.
-3. Ground claims in files you read. A path you cite exists, or you mark it
-   planned.
+2. Follow the target repository's existing documentation layout and nearest
+   agent instructions. Put a package introduction in that package's `README.md`.
+   Don't invent a new root docs tree or ADR structure without a project reason.
+3. Ground claims in files, interfaces, and executable behavior you inspect. A
+   path, command, option, or API you cite exists, or you label it as planned.
 4. Write the page. Don't wait for outline approval unless the user asked for a
-   structure, or the work is a multi-page set.
-5. Lead with the thing the reader came for. Show commands, requests, and paths.
+   structure, or the work is a multi-page set. Lead with the thing the reader
+   came for; show commands, requests, and paths.
+5. Validate the result in proportion to the change: run commands or examples
+   when safe, check links and identifiers, and render the documentation when
+   layout or site-specific syntax matters.
+6. Apply the `humanize` pass without changing technical semantics.
 
 Done when a reader with that goal can finish without another page of the same
 type.

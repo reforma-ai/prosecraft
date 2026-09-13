@@ -24,6 +24,9 @@ signals than any individual word or punctuation mark.
 - **Foundation** applies to every draft or substantial rewrite of human-facing prose.
   When another skill owns the genre or surface, use both: the specific skill controls
   requirements and format; this skill controls authorial quality and naturalness.
+- For technical documentation, use `documentation` when it is available. It owns the
+  reader's task, information architecture, established terminology, commands, code,
+  and technical accuracy. Never change those elements to make the prose sound smoother.
 - **Rewrite** is the default. Edit or draft the text and return the result.
 - **Audit** applies when the user asks to detect, scan, flag, critique, or explain AI-like
   writing without asking for a rewrite. Read
