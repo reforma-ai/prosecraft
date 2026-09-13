@@ -2,8 +2,6 @@
 
 Writing skills for AI agents that need to sound like someone meant what they wrote.
 
-[![skills.sh](https://skills.sh/b/reforma-ai/prosecraft)](https://skills.sh/reforma-ai/prosecraft)
-
 Generic "write better" prompts tend to blur different editorial jobs together. Prosecraft keeps them separate: humanizing a draft, structuring technical documentation, writing interface copy, and building skills for other agents.
 
 ## Skills
