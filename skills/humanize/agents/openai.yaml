@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanize"
+  short_description: "Rewrite prose with credible human choices"
+  default_prompt: "Use $humanize to rewrite this draft in a natural human voice while preserving its meaning."
