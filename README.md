@@ -122,6 +122,10 @@ skills/
 
 Each skill is self-contained and can be installed on its own. The manifests contain only packaging metadata, so there is no generated skill copy to keep in sync. For a plugin release, update the version in the portable and Claude manifests.
 
+## Related project
+
+Building software with agents, not just writing with them? [AgentFlow](https://github.com/reforma-ai/agentflow) provides a practical loop for research, decisions, PR-sized planning, implementation, and review.
+
 ## License
 
 Prosecraft is available under the [MIT License](LICENSE).
