@@ -1,25 +1,18 @@
----
-name: documentation
-description: >-
-  Use when writing or editing human-facing technical docs: README, API
-  reference, runbook, architecture, onboarding, tutorial, or how-to.
-  Not UI copy (ux-writing) and not reusable agent skills (writing-skills).
----
-
 # Documentation
 
-Write the human page. UI strings are `ux-writing`. Reusable agent skills are
-`writing-skills`; always-on repository instructions follow the target agent's conventions.
+Write the human page. Route UI strings through `ux-writing.md` and reusable agent
+skills through `writing-skills.md`; always-on repository instructions follow the
+target agent's conventions.
 
 For a new page or substantial rewrite, read
-[references/documentation-style.md](references/documentation-style.md). For a small,
+[documentation-style.md](documentation-style.md). For a small,
 mechanical correction, preserve the surrounding page's established style.
 
-## Compose with humanize
+## Apply the humanizing layer
 
-Use `humanize` alongside this skill when it is available. This skill owns the reader's
-task, information architecture, technical accuracy, terminology, code, and document
-shape. `humanize` owns natural rhythm, concrete language, restraint, and removal of
+Use `humanize.md` alongside this reference. Documentation rules own the reader's task,
+information architecture, technical accuracy, terminology, code, and document shape.
+The humanizing layer owns natural rhythm, concrete language, restraint, and removal of
 generic framing. If they conflict, correctness and the established documentation
 contract win. Humanization must never alter commands, identifiers, requirements,
 warnings, API behavior, or documented outcomes.
@@ -60,7 +53,7 @@ first success, then links to the other three.
 5. Validate the result in proportion to the change: run commands or examples
    when safe, check links and identifiers, and render the documentation when
    layout or site-specific syntax matters.
-6. Apply the `humanize` pass without changing technical semantics.
+6. Apply the humanizing pass without changing technical semantics.
 
 Done when a reader with that goal can finish without another page of the same
 type.

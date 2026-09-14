@@ -1,15 +1,7 @@
----
-name: ux-writing
-description: >-
-  Use when writing or editing user-visible interface copy: buttons, labels,
-  menus, tooltips, empty states, errors, loading states, confirmations, and
-  toasts. Not marketing copy, long-form documentation, or agent instructions.
----
-
 # UX writing
 
 Words are UI. Same job as spacing: help someone finish the action.
-This skill covers the words and their text alternatives, not visual design.
+These rules cover the words and their text alternatives, not visual design.
 
 Match the neighboring string in the same panel first. Don’t restyle the
 product’s voice in passing.

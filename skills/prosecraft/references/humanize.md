@@ -1,15 +1,3 @@
----
-name: humanize
-description: >-
-  Use whenever drafting or substantially revising human-facing prose, including emails,
-  posts, articles, documentation, product and UI copy, essays, scripts, and fiction,
-  even when the user does not explicitly ask to humanize it. Also use when asked to
-  humanize, de-AI, make text less robotic or generic, match an existing voice, or audit
-  a draft for recognizable AI-writing patterns. Apply it alongside any more specific
-  writing skill. Do not use for code, structured data, or purely mechanical spelling
-  and grammar correction.
----
-
 # Humanize
 
 Make the text feel chosen rather than generated. Preserve what the author means; improve
@@ -22,24 +10,21 @@ signals than any individual word or punctuation mark.
 ## Route the task
 
 - **Foundation** applies to every draft or substantial rewrite of human-facing prose.
-  When another skill owns the genre or surface, use both: the specific skill controls
-  requirements and format; this skill controls authorial quality and naturalness.
-- For technical documentation, use `documentation` when it is available. It owns the
-  reader's task, information architecture, established terminology, commands, code,
-  and technical accuracy. Never change those elements to make the prose sound smoother.
+  When another Prosecraft route owns the genre or surface, its specific rules control
+  requirements and format; this reference controls authorial quality and naturalness.
 - **Rewrite** is the default. Edit or draft the text and return the result.
 - **Audit** applies when the user asks to detect, scan, flag, critique, or explain AI-like
   writing without asking for a rewrite. Read
-  [references/editorial-patterns.md](references/editorial-patterns.md), report the
+  [editorial-patterns.md](editorial-patterns.md), report the
   observed patterns, and stop without rewriting.
 - For a standard or deep rewrite, also read
-  [references/editorial-patterns.md](references/editorial-patterns.md). A light edit can
+  [editorial-patterns.md](editorial-patterns.md). A light edit can
   use this file alone.
 - For fiction, scripts, personal essays, case studies, or any text whose effect depends
   on narrative structure, also read
-  [references/narrative-revision.md](references/narrative-revision.md) before rewriting.
+  [narrative-revision.md](narrative-revision.md) before rewriting.
 - If the user supplies samples of their writing, treat those as the primary voice
-  reference. This skill provides diagnostics, not a replacement personality.
+  reference. These rules provide diagnostics, not a replacement personality.
 
 Proceed without questions when the draft and request provide enough context. Ask only
 when a missing fact, audience, or intended meaning would materially change the result.
@@ -178,9 +163,9 @@ Read the result as a skeptical editor and check:
 - Does the ending stop naturally?
 
 For a standard or deep rewrite, run the portability, evidence, deletion, rhythm, and
-ending checks in [references/editorial-patterns.md](references/editorial-patterns.md).
+ending checks in [editorial-patterns.md](editorial-patterns.md).
 For narrative work, also run the review in
-[references/narrative-revision.md](references/narrative-revision.md).
+[narrative-revision.md](narrative-revision.md).
 
 If the answer exposes a problem, fix it once. Do not keep polishing until the author's
 voice disappears.

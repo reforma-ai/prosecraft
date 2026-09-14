@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "prosecraft",
-  "version": "0.1.0",
-  "description": "Practical skills for writing clear, useful, human-facing prose.",
+  "version": "0.1.1",
+  "description": "One writing skill for prose, documentation, interface copy, and agent skills.",
   "author": {
     "name": "Reforma AI",
     "url": "https://github.com/reforma-ai/prosecraft"

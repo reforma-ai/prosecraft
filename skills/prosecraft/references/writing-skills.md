@@ -1,19 +1,10 @@
----
-name: writing-skills
-description: >-
-  Use when creating, reviewing, restructuring, or publishing reusable agent
-  skills, including SKILL.md frontmatter, activation descriptions, instructions,
-  references, scripts, assets, validation, and cross-agent portability. Not for
-  ordinary documentation or always-on repository instructions such as AGENTS.md.
----
-
 # Writing skills
 
 Create reusable instructions that reliably change an agent's behavior without consuming
 more context or authority than the task requires.
 
 For exact file-format, portability, invocation, and validation details, read
-[references/skill-mechanics.md](references/skill-mechanics.md).
+[skill-mechanics.md](skill-mechanics.md).
 
 ## Start from behavior
 

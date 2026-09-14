@@ -112,7 +112,7 @@ Check the page as a reader, an operator, and a maintainer:
   and version-sensitive facts labeled?
 - **Accessibility:** Does the page retain its meaning without images, color, sound, spatial
   cues, or mouse-specific instructions?
-- **Editorial:** After applying `humanize`, is the prose direct and natural without changing
+- **Editorial:** After applying the humanizing layer, is the prose direct and natural without changing
   a single technical fact or literal?
 
 Fix substantive failures before polishing. Stop when the page completes its declared job;
