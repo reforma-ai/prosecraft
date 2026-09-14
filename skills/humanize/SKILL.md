@@ -74,6 +74,8 @@ Look for the few patterns that most weaken this particular draft. Common problem
   and a conclusion that repeats the introduction.
 - **Uniform rhythm:** similar sentence lengths, paragraph sizes, openings, transitions,
   and clause patterns.
+- **Over-segmented thought:** one continuous thought is split into a row of tidy declarative
+  sentences or independent clauses, so every qualification receives the same clean pause.
 - **Synthetic texture:** abstract nouns, stock metaphors, generic sensory detail,
   ceremonial transitions, inflated praise, or intensity unsupported by the content.
 - **Missing judgment:** the draft lists considerations but never reveals what matters,
@@ -127,6 +129,9 @@ or arbitrary roughness.
 - Use the shortest wording that preserves the intended nuance and voice.
 - Vary sentence length and syntax according to emphasis. A short sentence should land a
   point; it should not appear on a timer.
+- Read adjacent sentences as a unit. When two or three clauses belong to the same spoken
+  thought and none deserves its own emphasis, connect them with an explicit relationship
+  such as `and`, `but`, `while`, or `though` instead of presenting each as a separate point.
 - Vary paragraph length according to the size of the thought.
 - Cut meta-introductions, generic transitions, duplicated qualifiers, inflated adjectives,
   empty intensifiers, and conclusions that merely restate the preceding line.
@@ -167,6 +172,7 @@ Read the result as a skeptical editor and check:
 - Does each paragraph add information, judgment, tension, or movement?
 - Is any point explained twice?
 - Are the rhythm and structure varied for a reason?
+- Are any neighboring sentences really one thought cut into polished pieces?
 - Did the rewrite preserve every material fact, constraint, citation, and commitment?
 - Did it introduce an anecdote, belief, reference, or experience the author never supplied?
 - Does the ending stop naturally?

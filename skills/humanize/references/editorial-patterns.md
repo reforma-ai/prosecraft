@@ -131,6 +131,15 @@ Several short fragments manufacture urgency: `No delay. No debate. Just results.
 them when the rhythm is performing confidence rather than expressing the author's natural
 cadence.
 
+### Over-segmented thought
+
+A paragraph breaks one continuous thought into a row of short declarative sentences or
+independent clauses, sometimes attaching the final contrast with a semicolon. Each sentence
+may be grammatical and different in length; the problem is that every clause receives the
+same tidy pause. Join clauses that belong together with a conjunction or subordination that
+makes the relationship explicit. Keep a short sentence when it earns emphasis, not merely
+because it makes the paragraph look clear.
+
 ### Uniform cadence
 
 Sentences share the same length, opening, clause count, or punchline shape. Change only
@@ -148,6 +157,10 @@ ones that express real contrast, degree, uncertainty, or voice.
 Em dashes, colons, parentheses, and semicolons repeat because the model is using
 punctuation to create cadence. Keep every mark that clarifies the sentence. Remove clusters
 and vary the sentence structure instead of enforcing a numeric limit.
+
+A lone semicolon can still feel conspicuous in otherwise plain or conversational prose when
+`and`, `but`, `while`, or `though` would express the relationship more naturally. Treat that
+as a voice mismatch, not proof that semicolons are inherently artificial.
 
 ## Formatting habits
 
