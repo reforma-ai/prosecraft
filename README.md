@@ -21,6 +21,16 @@ The humanizing rules are a shared editorial layer, not a separate command. They 
 by default to prose written for people. Machine-facing instructions keep precision and
 unambiguous behavior ahead of stylistic polish.
 
+## Automatic use
+
+You do not need to invoke Prosecraft by name. Its activation description tells agents
+to load it before writing any human-facing text, including prose produced inside a
+coding, research, design, or product task. The Codex metadata enables implicit
+invocation as well.
+
+The slash and dollar-prefixed forms are available when you want to force activation,
+choose a particular writing task, or make the request easier to share.
+
 ## Install
 
 ### Skills CLI
@@ -89,9 +99,10 @@ skills CLI installs.
 
 ## Use
 
-Agents can activate Prosecraft from an ordinary writing request; naming a mode is not
-required. You can invoke it explicitly as `/prosecraft` after a standalone installation,
-`/prosecraft:prosecraft` through the Claude Code plugin, or `$prosecraft` in Codex.
+Agents should activate Prosecraft automatically for human-facing writing; naming a mode
+is not required. You can invoke it explicitly as `/prosecraft` after a standalone
+installation, `/prosecraft:prosecraft` through the Claude Code plugin, or `$prosecraft`
+in Codex.
 
 ```text
 /prosecraft Rewrite this announcement without flattening my voice: ...

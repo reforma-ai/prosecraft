@@ -2,3 +2,6 @@ interface:
   display_name: "Prosecraft"
   short_description: "Write and edit text for its real audience"
   default_prompt: "Use $prosecraft to write or revise this text for its intended reader and surface."
+
+policy:
+  allow_implicit_invocation: true
