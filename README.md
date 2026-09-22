@@ -7,6 +7,21 @@ need—a README, an error message, an agent skill, a rewrite—and it loads only
 for that kind of work. Human-facing text also gets an editorial pass for specificity,
 natural rhythm, and a recognizable voice.
 
+## Research and sources
+
+Prosecraft is grounded in [*StoryScope: Investigating Idiosyncrasies in AI
+Fiction*](https://arxiv.org/abs/2604.03136) by Jenna Russell, Rishanth Rajendhran,
+Chau Minh Pham, Mohit Iyyer, and John Wieting. The study compares 10,272 human stories
+with responses to the same prompts from five language models and identifies 304 narrative
+features across ten categories. Its findings shape Prosecraft's guidance on thematic
+over-explanation, linear causality, tidy resolution, moral ambiguity, chronology, and
+model-specific narrative defaults. Prosecraft turns those corpus-level patterns into
+revision questions, not universal rules or a detector for individual texts.
+
+The documentation guidance also synthesizes established public practices from Microsoft,
+Google, Apple, GitLab, Red Hat, and the Diátaxis framework. Those sources inform its advice on reader goals, information architecture, procedures, terminology, accessibility, and
+technical accuracy.
+
 ## What it handles
 
 | Work | What Prosecraft pays attention to |
