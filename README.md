@@ -9,8 +9,8 @@ natural rhythm, and a recognizable voice.
 
 ## Research and sources
 
-Prosecraft is grounded in [*StoryScope: Investigating Idiosyncrasies in AI
-Fiction*](https://arxiv.org/abs/2604.03136) by Jenna Russell, Rishanth Rajendhran,
+Prosecraft is grounded in [_StoryScope: Investigating Idiosyncrasies in AI
+Fiction_](https://arxiv.org/abs/2604.03136) by Jenna Russell, Rishanth Rajendhran,
 Chau Minh Pham, Mohit Iyyer, and John Wieting. The study compares 10,272 human stories
 with responses to the same prompts from five language models and identifies 304 narrative
 features across ten categories. Its findings shape Prosecraft's guidance on thematic
@@ -24,13 +24,13 @@ technical accuracy.
 
 ## What it handles
 
-| Work | What Prosecraft pays attention to |
-| --- | --- |
-| General prose | Meaning, voice, rhythm, specificity, and recognizable AI-writing patterns |
+| Work                    | What Prosecraft pays attention to                                                                   |
+| ----------------------- | --------------------------------------------------------------------------------------------------- |
+| General prose           | Meaning, voice, rhythm, specificity, and recognizable AI-writing patterns                           |
 | Technical documentation | Reader goals, information architecture, accuracy, examples, and established documentation standards |
-| Interface copy | Actions, product terminology, brevity, accessibility, and consistency across a flow |
-| Agent skills | Activation, behavioral instructions, progressive disclosure, packaging, and portability |
-| Narrative writing | Character, causality, chronology, revelation, scene structure, and endings |
+| Interface copy          | Actions, product terminology, brevity, accessibility, and consistency across a flow                 |
+| Agent skills            | Activation, behavioral instructions, progressive disclosure, packaging, and portability             |
+| Narrative writing       | Character, causality, chronology, revelation, scene structure, and endings                          |
 
 The humanizing rules are a shared editorial layer, not a separate command. They apply
 by default to prose written for people. Machine-facing instructions keep precision and
@@ -153,7 +153,7 @@ so an interface-copy request does not load documentation or agent-skill guidance
 
 ## Related project
 
-Building software with agents, not just writing with them? [AgentFlow](https://github.com/reforma-ai/agentflow)
+Building software with agents, not just writing with them? [BriefBack](https://github.com/reforma-ai/briefback)
 provides a practical loop for research, decisions, PR-sized planning, implementation,
 and review.
 
