@@ -3,6 +3,8 @@
 Create reusable instructions that reliably change an agent's behavior without consuming
 more context or authority than the task requires.
 
+Apply [writing-for-agents.md](writing-for-agents.md) for instruction wording,
+scope, references, and compression. This guide adds skill-specific design.
 For exact file-format, portability, invocation, and validation details, read
 [skill-mechanics.md](skill-mechanics.md).
 
@@ -51,24 +53,7 @@ Use scripts when deterministic execution is safer or the same transformation wou
 be rewritten repeatedly. Use assets only for material copied or adapted into the output. Do
 not create empty folders or placeholder files.
 
-## Write instructions that steer
-
-- Lead with the outcome and the decisions the agent must make.
-- Preserve user intent. A skill guides the requested work; it does not expand the task or
-  grant permission for unrelated external actions.
-- Prefer decision rules over rigid sequences when several approaches can succeed. Use fixed
-  steps for fragile workflows, safety boundaries, or formats that must be exact.
-- State true invariants directly. Phrase preferences as criteria, not universal laws.
-- Give each ordered step an observable completion condition. Define when to stop retrying or
-  polishing when unnecessary repetition is a realistic failure mode.
-- Co-locate a concept's rule, rationale, and exception. Do not scatter duplicates across the
-  body and references.
-- Use positive targets that describe the wanted result. Keep prohibitions for real failure or
-  safety boundaries.
-- Remove generic advice a capable agent already follows. Keep domain knowledge, unwritten
-  conventions, non-obvious tradeoffs, and failure-specific guidance.
-- Make priorities explicit where instructions can conflict. The user's explicit request and
-  the target project's applicable instructions remain authoritative.
+## Keep the skill portable
 
 For a public skill, replace internal paths, team names, private tools, and assumed repository
 structure with discovery rules. Declare a real environment dependency instead of hiding it in

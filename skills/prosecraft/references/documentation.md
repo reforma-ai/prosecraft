@@ -1,8 +1,9 @@
 # Documentation
 
 Write the human page. Route UI strings through `ux-writing.md` and reusable agent
-skills through `writing-skills.md`; always-on repository instructions follow the
-target agent's conventions.
+skills through [writing-skills.md](writing-skills.md). For repository instructions,
+agent prompts, and handoffs, use [writing-for-agents.md](writing-for-agents.md)
+and follow the target agent's conventions.
 
 For a new page or substantial rewrite, read
 [documentation-style.md](documentation-style.md). For a small,
