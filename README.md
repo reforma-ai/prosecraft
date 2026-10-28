@@ -3,7 +3,7 @@
 Writing guidance for AI agents that need to sound like someone meant what they wrote.
 
 Prosecraft is one skill with several writing disciplines behind it. Tell it what you
-need—a README, an error message, an agent skill, a rewrite—and it loads only the rules
+need—a README, an error message, agent instructions, a rewrite—and it loads only the rules
 for that kind of work. Human-facing text also gets an editorial pass for specificity,
 natural rhythm, and a recognizable voice.
 
@@ -22,6 +22,13 @@ The documentation guidance also synthesizes established public practices from Mi
 Google, Apple, GitLab, Red Hat, and the Diátaxis framework. Those sources inform its advice on reader goals, information architecture, procedures, terminology, accessibility, and
 technical accuracy.
 
+The agent-instruction route draws on
+[Writing for Agents](https://github.com/mattpocock/skills/blob/main/skills/productivity/writing-for-agents/SKILL.md)
+and the brevity techniques in
+[Caveman](https://github.com/Karnonson/caveman/blob/main/skills/caveman/SKILL.md).
+Agent-facing text defaults to terse instructions without filler or repeated rules.
+Compression preserves conditions, permissions, and exact technical content.
+
 ## What it handles
 
 | Work                    | What Prosecraft pays attention to                                                                   |
@@ -29,6 +36,7 @@ technical accuracy.
 | General prose           | Meaning, voice, rhythm, specificity, and recognizable AI-writing patterns                           |
 | Technical documentation | Reader goals, information architecture, accuracy, examples, and established documentation standards |
 | Interface copy          | Actions, product terminology, brevity, accessibility, and consistency across a flow                 |
+| Agent instructions      | AGENTS.md, CLAUDE.md, prompts, handoffs, memory, and compression that preserves behavior              |
 | Agent skills            | Activation, behavioral instructions, progressive disclosure, packaging, and portability             |
 | Narrative writing       | Character, causality, chronology, revelation, scene structure, and endings                          |
 
@@ -39,9 +47,9 @@ unambiguous behavior ahead of stylistic polish.
 ## Automatic use
 
 You do not need to invoke Prosecraft by name. Its activation description tells agents
-to load it before writing any human-facing text, including prose produced inside a
-coding, research, design, or product task. The Codex metadata enables implicit
-invocation as well.
+to load it before writing human-facing text or agent instructions, including prose
+produced inside a coding, research, design, or product task. The Codex metadata
+enables implicit invocation as well.
 
 The slash and dollar-prefixed forms are available when you want to force activation,
 choose a particular writing task, or make the request easier to share.
@@ -127,6 +135,10 @@ in Codex.
 /prosecraft Rewrite the empty and error states in this panel.
 
 /prosecraft Review this agent skill for weak activation and unnecessary context.
+
+/prosecraft Shorten this AGENTS.md without losing requirements or exceptions.
+
+/prosecraft Write a handoff so another agent can continue from the current state.
 ```
 
 To inspect a draft without changing it:

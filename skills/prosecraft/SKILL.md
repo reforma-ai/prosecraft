@@ -5,10 +5,12 @@ description: >-
   intended for people, even when the user does not mention Prosecraft or ask for
   writing help. This includes prose produced inside another task: emails, posts,
   articles, documentation, READMEs, product and UI copy, essays, scripts, and
-  fiction. Also use when creating or reviewing agent skills, or when asked to
-  humanize, de-AI, match a voice, or audit AI-writing patterns. Apply the
-  humanizing rules to every human-facing part; keep machine-facing instructions
-  precise. Do not use for code, structured data, or purely mechanical correction.
+  fiction. Also use when creating, editing, reviewing, or compressing agent
+  instructions: skills, AGENTS.md, CLAUDE.md, prompts, handoffs, and context or
+  memory files; or when asked to humanize, de-AI, match a voice, or audit
+  AI-writing patterns. Humanize human-facing text; make agent-facing text terse,
+  precise, and free of repetition by default to conserve context. Do not use for
+  code, structured data, or purely mechanical correction.
 ---
 
 # Prosecraft
@@ -23,6 +25,9 @@ for a person to read, first read
 [references/humanize.md](references/humanize.md) and apply it to that text. This
 includes writing that is only one part of a coding, research, design, product, or
 operational task.
+
+For agent-facing artifacts, follow the agent-instructions route below. Load
+humanizing guidance only for accompanying human-facing text.
 
 The humanizing layer is the default for human-facing text. Format-specific rules
 can override it where correctness, terminology, space, accessibility, or machine
@@ -45,12 +50,14 @@ Read only the references needed for the current task:
 - **Interface copy:** Read [references/ux-writing.md](references/ux-writing.md).
   Keep the humanizing pass subordinate to space, terminology, accessibility, and
   interaction constraints.
-- **Agent skills:** Read
+- **Agent instructions:** For text that directs an agent's behavior, including
+  `AGENTS.md`, `CLAUDE.md`, prompts, handoffs, and context or memory files, read
+  [references/writing-for-agents.md](references/writing-for-agents.md).
+  Includes caveman-style compression.
+- **Agent skills:** Read the agent-instructions reference above plus
   [references/writing-skills.md](references/writing-skills.md) and
-  [references/skill-mechanics.md](references/skill-mechanics.md). Do not
-  apply humanizing rules to machine-facing instructions at the expense of precise
-  activation, scope, or behavior. Apply them to public-facing parts such as a
-  README or marketplace description.
+  [references/skill-mechanics.md](references/skill-mechanics.md) for activation,
+  packaging, and portability.
 
 Infer the route from the requested deliverable; the user does not need to name a
 mode. A task can use more than one route, but do not load unrelated references.
